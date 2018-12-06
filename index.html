@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Tracking the Vote</title>
+
+	<style>
+	#mainHeader{
+		background-color:#1f333d;
+		color:white;
+		font-family: Rockwell;
+		font-size: 75px;
+		line-height: 50pt;
+	}
+	#signature{
+		background-color:#1f333d;
+		color:white;
+		font-family: Helvetica;
+		font-weight: 100;
+	}
+	#text{
+		color:black;
+		font-family: Helvetica;
+		font-size: 14px;
+		line-height: 14pt;
+	}
+	h1{
+		font-family: Rockwell;
+	}
+	#headline{
+		color:black;
+		
+		font-size: 55px;
+		line-height: 30pt; 
+		margin-left: 0px;
+	}
+	#intro{
+		background-color:#bad29f;
+	}
+	#pastThePost{
+		background-color:#f4dbd8;
+	}
+	#rankedChoice{
+		background-color:#d57a66;
+		margin-left: 0px;
+	}
+	#legend{
+		background-color:#1f333d;
+		color:white;
+		font-family: Helvetica;
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+	#population{
+		background-color:#6a7a7d;
+		margin-left: 0px;
+	}
+	#reg{
+		background-color:#bad29f;
+	}
+	#voters{
+		background-color:#d57a66;
+	}
+	#electoralCollege{
+		background-color:#6a7a7d;
+	}
+	#stateByState{
+		background-color:#f4dbd8;
+	}
+	#value{
+		background-color:#d57a66;
+	}
+	#winning{
+		background-color:#f4dbd8;
+	}
+	#conclusion{
+		background-color:#6a7a7d;
+	}
+	#references{
+		background-color:#bad29f;
+		margin-left: 0px;
+	}
+
+</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="container-fluid" id="mainHeader">
+			<div class="span4">
+				<h1 id="mainHeader">Tracking the Vote</h1>
+			</div>
+		</div>
+		<div class="container-fluid" id="signature">	
+			<h5 class="text-right" id="signature">By Eva Philips</h5>		
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="span12">
+				<img class="img" src="us.svg" alt="USA">
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span8" id="intro" id="headline">
+				<h1 style="margin-left: 30px">Introduction</h1>
+				<div class="span8">
+					<p></p>
+				</div>
+				<div class="span2">
+					<p></p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="span4" style="margin-left: 0px">
+				<iframe frameborder="0" width="300" height="500" src="https://editor.p5js.org/evapphilips/embed/BJLpI4gJ4"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span6" id="pastThePost" id="headline">
+				<h1 style="margin-left: 30px">First Past the Post Voting</h1>
+				<div class="span6">
+					<p></p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+
+
+			<div class="span6" id="rankedChoice" id="headline">
+				<h1 class="span4" style="margin-left: 30px">Ranked Choice Voting</h1>
+				<div class="span6">
+					<p></p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span2"></div>
+			<div>
+				<iframe class="span8" style="margin-left: 0px" height="440" frameborder="0" src="https://editor.p5js.org/evapphilips/embed/Sk3s6NlyV"></iframe>
+			</div>
+			<div class="span2" id="legend" style="margin-left: 0px">
+				<p style="margin-top: 10px; text-decoration: underline">Legend</p>
+				<p>rectangle code</p>
+				<p>star code</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="span12" id="population" id="headline">
+				<div class="span2">
+					<p></p>
+				</div>
+				<h1 class="span4" style="margin-left: 0px">The Population</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="span12" id="population">
+				<div class="span2">
+					<p></p>
+				</div>
+				<div class="span6" style="margin-left: 0px">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span4" id="reg" style="margin-left: 0px">
+				<div class="span4" style="height: 440px">
+					<p></p>
+				</div>
+			</div>
+			<div>
+				<iframe  class="span6" height="440" frameborder="0" src="https://editor.p5js.org/evapphilips/embed/r1jgvIgk4"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="span4" id="reg" style="margin-left: 0px">
+				<div class="span4">
+					<p id="text"style="margin-right: 30px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<h1 class="span2" style="margin-left: 0px">The Registered</h1>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span12" id="voters" id="headline" style="margin-left: 0px">
+				<h1 class="span2">The Voters</h1>
+				<div class="span2">
+					<p></p>
+				</div>
+				<div class="span4">
+					<p id="text"style="margin-right: 30px; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<iframe  class="span12" height="540" frameborder="0" style="margin-left: 0px" src="https://editor.p5js.org/evapphilips/embed/HJLfCLe1E"></iframe>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div  class="span12" id="electoralCollege" id="headline" style="margin-left: 0px">
+				<div class="span2">
+					<p></p>
+				</div>
+				<h1 class="span6">About the <br/> Electoral College</h1>
+			</div>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div  class="span12" id="electoralCollege" id="headline" style="margin-left: 0px">
+				<div class="span2">
+					<p></p>
+				</div>
+				<div class="span3">
+					<p id="text"style="margin-right: 30px; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+				<div class="span3">
+					<p id="text"style="margin-right: 30px; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<iframe  class="span8" height="630" style="margin-left: 0px" frameborder="0" src="https://editor.p5js.org/evapphilips/embed/B1F_ovl1E"></iframe>
+			<div class="span4" id="stateByState" id="headline">
+				<h1 class="span4">State by </br> State Vote</h1>
+				<div class="span4">
+					<p id="text"style="margin-right: 30px; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+				<div class="span4">
+					<p style="height: 100px"></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div class="container">
+			<div class="span4" id="value" id="headline">
+				<div class="span4">
+					<p style="height: 240px"></p>
+					<p id="text"style="margin-right: 30px; margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<h1 class="span4" style="margin-left: 0px">Value of <br> Votes</h1>
+				</div>
+			</div>
+			<iframe  class="span8" height="630" style="margin-left: 0px" frameborder="0" src="https://editor.p5js.org/evapphilips/embed/Hy9D2e7JN"></iframe>
+		</div>
+	</div>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+<hr>
+
+<div class="row">
+	<div class="container">
+		<div class="span2">
+			<p></p>
+		</div>
+		<iframe  class="span8" frameborder="0" height="630" frameborder="0" src="https://editor.p5js.org/evapphilips/embed/S1rmQWmk4"></iframe>
+	</div>
+</div>
+
+<div class="row">
+	<div class="container">
+		<div class="span12" id="winning" id="headline" style="margin-left: 0px">
+			<div class="span2">
+				<p></p>
+			</div>
+			<h1 class="span4">Winning Votes</h1>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="container">
+		<div class="span12" id="winning" id="headline" style="margin-left: 0px">
+			<div class="span2">
+				<p></p>
+			</div>
+			<div class="span6">
+				<p id="text" style="margin-top: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>	
+
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="row">
+		<div class="container">
+			<div class="span6" id="conclusion" id="headline" style="margin-left: 0px">
+				<h1 style="margin-left: 30px">Conclusion</h1>
+				<div class="span6">
+					<p></p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="span2">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+
+
+			<div class="span6" id="references" id="headline">
+				<h1 style="margin-left: 30px">References</h1>
+				<div class="span6">
+					<p></p>
+				</div>
+				<div class="span4">
+					<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="span4">
+					<p style="height: 200"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+</html>
